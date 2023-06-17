@@ -1,0 +1,23 @@
+.trending-section{
+font-family: 'Poppins';
+}
+.tittle{
+        height: 46px;
+        font-family: spectral;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: #000002;
+        margin-bottom: 24px;
+        
+}
+.sub-tittle{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    
+}

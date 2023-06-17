@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom"
-import Home from "../Home/Home"
+
 import Footer from "../Share/Footer"
+import Header from "../Share/Header"
 
 
 function Main() {
     return (
         <div >
-            <Home />
+            <Header />
             <Outlet />
             <Footer/>
         </div>

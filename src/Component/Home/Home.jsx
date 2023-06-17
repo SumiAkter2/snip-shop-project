@@ -1,10 +1,14 @@
-import Header from "../Share/Header";
+
+import TrendingProduct from "../TrendingProduct/TrendingProduct";
+import Banner from "./Banner";
 
 
 const Home = () => {
     return (
         <div>
-           <Header/>
+           
+            <Banner />
+            <TrendingProduct/>
         </div>
     );
 };
