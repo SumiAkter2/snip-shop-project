@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   daisyui: {
     themes: [
       {
@@ -9,7 +9,7 @@ export default {
 
           secondary: "#fbbf24",
 
-          accent: "#9ca3af",
+          accent: "#1E66FF",
 
           neutral: "#06b6d4",
 

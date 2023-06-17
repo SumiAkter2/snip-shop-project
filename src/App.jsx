@@ -1,14 +1,14 @@
-
 import './App.css'
+import Main from './Component/LayOut/Main'
 
 function App() {
   
   return (
-    <>
+    <div className='max-w-screen-xl mx-auto'>
       
-      <h1>Snip Shop</h1>
+     <Main/>
   
-    </>
+    </div>
   )
 }
 
