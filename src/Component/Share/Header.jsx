@@ -1,6 +1,7 @@
 
 import logo from '../../assets/images/brandLogo.jpg';
 import LogoName from '../../assets/images/brandName5.png'
+import searchIcon from '../../assets/images/NavBar_Search_Icon 1.png'
 const Header = () => {
     return (
       
@@ -13,7 +14,10 @@ const Header = () => {
   </div>
   <div className="flex-none gap-2">
     <div className="form-control">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+     <div className="join ">
+  <input className="input input-bordered join-item rounded-full w-[596px]" placeholder="Search SnipShop.com"/>
+  <button className="btn join-item rounded-full rounded-r-full btn-neutral"><img src={searchIcon} alt="" /></button>
+</div>
     </div>
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
