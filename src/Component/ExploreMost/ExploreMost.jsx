@@ -32,7 +32,9 @@ const ExploreMost = () => {
                                 </div>              
   </div>
 </div></div>
-   <Text tittle={'Explore Most Popular Brands'} subTittle={'Life is hard enough already. Let us  make it a little easier.'}></Text>
+             
+                 <Text tittle={'Explore Most Popular Brands'} subTittle={'Life is hard enough already. Let us  make it a little easier.'}></Text>
+ 
   </div>
 </div> 
         </div>

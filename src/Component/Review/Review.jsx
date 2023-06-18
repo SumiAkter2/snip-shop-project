@@ -9,13 +9,11 @@ const Review = () => {
   <div className="hero-content flex-col lg:flex-row">
                 <div className='lg:w-1/2'>
                     <img src={bg}className="lg:max-w-lg max-w-sm rounded-lg " />
-    </div>
+                </div>
    
       <div className="carousel lg:w-1/2 ">
         {carouselInfo.map((slide) => (
-            <Carousel key={slide.id} slide={slide} >
-                
-            </Carousel>
+            <Carousel key={slide.id} slide={slide} ></Carousel>
         ))}
     
     </div>

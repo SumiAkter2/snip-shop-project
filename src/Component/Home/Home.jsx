@@ -1,4 +1,5 @@
 
+import CategoryProduct from "../Category/CategoryProduct";
 import ExploreMost from "../ExploreMost/ExploreMost";
 import Review from "../Review/Review";
 import SellSocialMedia from "../SellSocialMedia/SellSocialMedia";
@@ -12,6 +13,7 @@ const Home = () => {
            
             <Banner />
             <TrendingProduct />
+            <CategoryProduct/>
             <ExploreMost/>
             <SellSocialMedia />
             <Review/>

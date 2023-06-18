@@ -21,3 +21,10 @@ font-family: 'Poppins';
     text-align: center;
     
 }
+.trendingInfo-bg{
+    background: linear-gradient(234.3deg, #C0D4FE 16.99%, #ECF1FD 91.97%);
+        border: 1px solid #EDEDED;
+        box-shadow: 5px 13px 18px -5px rgba(128, 128, 128, 0.1);
+        backdrop-filter: blur(4.5px);
+        border-radius: 25px;
+}
