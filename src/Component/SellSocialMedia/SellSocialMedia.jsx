@@ -3,7 +3,7 @@ import boy from '../../assets/images/sell-social/boy.png';
 import watch from '../../assets/images/sell-social/watch.png';
 import shoe from '../../assets/images/sell-social/shoe.png';
 import sunglass from '../../assets/images/sell-social/sunglass.png';
-
+import {BsArrowRight} from 'react-icons/bs'
 const SellSocialMedia = () => {
     return (
         <div>
@@ -33,8 +33,8 @@ const SellSocialMedia = () => {
 </div></div>
     <div className='lg:w-1/2 mr-36 text-left'>
       <h1 className="tittle font-bold">Sell Easily on Socialmedia</h1>
-      <p className="py-6">Life is hard enough already.  Let us  <br />make it a little easier.</p>
-      <button className="font-bold ">See all</button>
+      <p className="pb-6 sub-tittle text-left">Life is hard enough already.  Let us  <br />make it a little easier.</p>
+      <button className="font-bold flex justify-center items-center">See all <BsArrowRight size='20px' className='ml-2'/></button>
     </div>
   </div>
 </div> 
