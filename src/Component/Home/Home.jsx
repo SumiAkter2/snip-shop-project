@@ -1,4 +1,5 @@
 
+import ExploreMost from "../ExploreMost/ExploreMost";
 import SellSocialMedia from "../SellSocialMedia/SellSocialMedia";
 import TrendingProduct from "../TrendingProduct/TrendingProduct";
 import Banner from "./Banner";
@@ -10,6 +11,7 @@ const Home = () => {
            
             <Banner />
             <TrendingProduct />
+            <ExploreMost/>
             <SellSocialMedia/>
         </div>
     );

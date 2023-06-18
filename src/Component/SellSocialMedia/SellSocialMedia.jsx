@@ -3,7 +3,8 @@ import boy from '../../assets/images/sell-social/boy.png';
 import watch from '../../assets/images/sell-social/watch.png';
 import shoe from '../../assets/images/sell-social/shoe.png';
 import sunglass from '../../assets/images/sell-social/sunglass.png';
-import {BsArrowRight} from 'react-icons/bs'
+import Text from '../Share/Text';
+
 const SellSocialMedia = () => {
     return (
         <div>
@@ -25,17 +26,11 @@ const SellSocialMedia = () => {
                                     <img src={watch} alt="boy Img" />
                                     <img src={shoe} alt="boy Img" className='rounded-lg' /> 
                                 </div>
-      {/* <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Started</button> */}
     </div>
   </div>
 </div></div>
-    <div className='lg:w-1/2 mr-36 text-left'>
-      <h1 className="tittle font-bold">Sell Easily on Socialmedia</h1>
-      <p className="pb-6 sub-tittle text-left">Life is hard enough already.  Let us  <br />make it a little easier.</p>
-      <button className="font-bold flex justify-center items-center">See all <BsArrowRight size='20px' className='ml-2'/></button>
-    </div>
+                    <Text tittle={'Sell Easily on Socialmedia'} subTittle={'Life is hard enough already. Let us  make it a little easier.'}>
+   </Text>
   </div>
 </div> 
         </div>
