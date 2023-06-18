@@ -4,7 +4,7 @@ const TrendingProductInfo = ({product}) => {
     return (
       
             
-    <div className=" trendingInfo-bg h-36 relative my-12">
+    <div className=" trendingInfo-bg h-36 relative my-12 ">
    
     <img src={product.img} alt="product-img"  className="lg:h-48 absolute top-[-40px] right-[-5px]"/>
     <div className="text-left p-4 ">
