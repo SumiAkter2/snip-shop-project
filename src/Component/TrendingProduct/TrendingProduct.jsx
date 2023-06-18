@@ -24,7 +24,9 @@ const TrendingProduct = () => {
 
             </div>
 
-            {products.map(product => <TrendingProductInfo key={product.id} product={product}></TrendingProductInfo>)}
+            {/* <div className=''>
+                 {products.map(product => <TrendingProductInfo key={product.id} product={product}></TrendingProductInfo>)}
+           </div> */}
         </div>
     );
 };

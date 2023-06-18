@@ -1,4 +1,5 @@
 
+import SellSocialMedia from "../SellSocialMedia/SellSocialMedia";
 import TrendingProduct from "../TrendingProduct/TrendingProduct";
 import Banner from "./Banner";
 
@@ -8,7 +9,8 @@ const Home = () => {
         <div>
            
             <Banner />
-            <TrendingProduct/>
+            <TrendingProduct />
+            <SellSocialMedia/>
         </div>
     );
 };
