@@ -4,16 +4,16 @@ const TrendingProductInfo = ({product}) => {
     return (
       
             
-    <div className="hero trendingInfo-bg">
-    <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={product.images[2]} alt="product-img"  className="lg:h-44 "/>
-    <div className="text-left">
-      <h1 className="text-sm font-bold">{product.title}</h1>
+    <div className=" trendingInfo-bg h-36 relative my-12">
+   
+    <img src={product.img} alt="product-img"  className="lg:h-48 absolute top-[-40px] right-[-5px]"/>
+    <div className="text-left p-4 ">
+      <h1 className="text-xl font-bold">{product.name}</h1>
                     <p>Starting</p>
-                    <p>${product.price}</p>
+                    <p className="text-error mt-4">${product.price}</p>
     </div>
     </div>
-    </div>
+   
     );
 };
 

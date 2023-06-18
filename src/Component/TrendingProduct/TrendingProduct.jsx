@@ -1,13 +1,11 @@
-import {  useEffect, useState } from 'react';
+import { trendingSellInfo } from '../Share/Info';
 import './TrendingProduct.css'
 import TrendingProductInfo from './TrendingProductInfo';
-import UseHook from '../../Hook/UseHook';
+
 // import Carousel from '../Share/Carousel';
 
 const TrendingProduct = () => {
-    const [products ] = UseHook([]);
    
-    
     return (
         <div className='trending-section'>
             <h1 className="tittle">Shop Our Trending Products</h1>
@@ -20,10 +18,10 @@ const TrendingProduct = () => {
 
             </div>
 
-          <div className='grid lg:grid-cols-5 md:grid-cols-3'>
-                {/* {
-                    products.map(product => <TrendingProductInfo key={product.id} product={product}></TrendingProductInfo>)
-               } */}
+          <div className='grid lg:grid-cols-5 md:grid-cols-3 gap-x-5'>
+                {
+                    trendingSellInfo.map(product => <TrendingProductInfo key={product.id} product={product}></TrendingProductInfo>)
+               }
            </div> 
         </div>
     );
