@@ -1,41 +1,45 @@
-import boy from '../../assets/images/sell-social/boy.png'
+import emoji from '../../assets/images/ReviewPage/37 11.png'
 
-const Carousel = () => {
+const Carousel = ({ slide,children }) => {
+     const { img, id, prev, next } = slide;
     return (
-        <div>
-            <div className="carousel w-full">
-  <div id="slide1" className=" relative w-full">
-                    <img src={boy} className="w-full" />
-                    <h1>Justin Pierre</h1>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
+       <div
+      id={`slide${id}`}
+      className="carousel-item relative w-full h-96 mb-12"
+    >
+      <div className="carousel-img">
+        <img src={img} alt="" className="w-screen rounded-xl " />
+      </div>
+      <div className="absolute text-left  transform -translate-y-1/2 left-24 top-1/4">
+                <div >
+                <div className='flex '>
+                <h1 className=" text-xl font-bold ">
+                  Justin Pierre
+                </h1>
+                <img src={emoji} alt="emoji" />
+               </div>
+                
+                <small>Products Seller</small>
+               </div>
+                
+                
+            </div>
+            
+      <div className="absolute text-left flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
+        <p className="text-sm mt-6  italic ">
+          “In 2 years, my business went from just me and my Shop site to 40 employees, my own fulfillment center and over 22 million dollars in revenue.”
+        </p>
+      </div>
+     
+      <div className="absolute flex justify-end transform -translate-y-1/2 left-24  bottom-8">
+        <a href={`#slide${prev}`} className="btn btn-circle btn-primary mr-5">
+          ❮
+        </a>
+        <a href={`#slide${next}`} className="btn btn-circle btn-primary">
+          ❯
+        </a>
+      </div>
     </div>
-  </div> 
-  <div id="slide2" className="carousel-item relative w-full">
-    <img src={boy} className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a> 
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src={boy}className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-                    <img src={boy} className="w-full" />
-                    
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-        </div>
     );
 };
 
