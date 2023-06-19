@@ -3,25 +3,26 @@ import { useForm } from "react-hook-form";
 import {  useParams } from "react-router-dom";
 
 const UpdateProduct = () => {
-    const id = useParams();
+    const {id} = useParams();
     console.log(id);
     const [product, setProduct] = useState({});
 
     useEffect(() => {
         fetch(`https://dummyjson.com/products/${id}`)
             .then(res => res.json())
-        .then(data=>console.log(data))
+        .then(data=>setProduct(data))
         },
      [id])
-    console.log(fetch);
+   
 
     const {
     register,
-    // formState: { errors },
+    formState: { errors },
     handleSubmit,
     } = useForm();
     
-const onSubmit = (data) => {     
+    const onSubmit = (data) => {  
+    console.log(data);
   fetch('https://dummyjson.com/products/add', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -44,29 +45,28 @@ const onSubmit = (data) => {
                       <input
                         type="text"
                             name="Name" 
-                            defaultValue={id.id}
-                        // placeholder="Name"
+                            defaultValue={product.title}
                         className="input input-bordered input-info w-full max-w-xs my-4"
                         {...register("Name", { required: true })}
                       />
 
-                      {/* <span className="label-text-alt text-error ">
+                      <span className="label-text-alt text-error ">
                         {errors.Name?.type === "required" &&
                           "!Name is required"}
-                      </span> */}
+                      </span>
                    <br />
                       <input
                         type="text"
                         name="Price"
-                        placeholder="Type Price"
+                        defaultValue={product.price}
                         className="input input-bordered input-info w-full max-w-xs"
                         {...register("Price", { required: true })}
                       />
 
-                      {/* <span className="label-text-alt text-error ">
+                      <span className="label-text-alt text-error ">
                         {errors.Price?.type === "required" &&
                           "!Price is required"}
-                      </span> */}
+                      </span>
                    
                    <br />
                  <button className="btn btn-active rounded-md btn-info mt-4">Add Now</button>
