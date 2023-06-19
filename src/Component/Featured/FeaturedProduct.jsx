@@ -1,8 +1,5 @@
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { useEffect, useState } from "react";
-// import FeaturedProductInfo from "./FeaturedProductInfo";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,10 +19,10 @@ const FeaturedProduct = () => {
       <h1 className="tittle lg:pt-32 pb-16">
         Featured Product For <br /> Pre-Order
       </h1>
-      <p className="sub-tittle flex items-center lg:justify-end justify-center">
+      <p className="sub-tittle flex items-center lg:justify-end justify-center px-6">
         Discover Our Products <HiOutlineArrowNarrowRight />
       </p>
-
+      {/* for laptop swipper */}
       <div>
         <Swiper
           navigation={{ clickable: true }}
@@ -33,7 +30,7 @@ const FeaturedProduct = () => {
           slidesPerView={3}
           centeredSlides={true}
           style={{
-            "--swiper-button-next-left": "10px",
+            
             " --swiper-navigation-size": "44px",
             "--swiper-navigation-left-offset": "50px",
             "--swiper-navigation-sides-offset": " 10px",

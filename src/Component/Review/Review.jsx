@@ -6,9 +6,9 @@ import {  carouselInfo } from '../Share/Info';
 const Review = () => {
     return (
       <div className=" ">
-        <div className="lg:flex justify-between items-center">
+        <div className="lg:flex justify-center items-center">
           
-            <img src={bg} className=" rounded-lg lg:w-1/2 w-60" />
+            <img src={bg} className=" rounded-lg lg:w-1/2 w-60 " />
           
 
           <div className="carousel lg:w-1/2 ">
