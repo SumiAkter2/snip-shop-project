@@ -4,7 +4,7 @@ import bannerImg3 from '../../assets/images/banner/camera2.png';
 import dot from '../../assets/images/banner/dot.png';
 
 
-const AddProduct = ({slide}) => {
+const BannerInfo = ({slide}) => {
    const { img, id, prev, next } = slide;
   return (
     <div
@@ -74,4 +74,4 @@ Vintage
   );
 };
 
-export default AddProduct;
+export default BannerInfo;

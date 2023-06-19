@@ -13,7 +13,7 @@ const Header = () => {
   <div className="navbar-start">
    
           <a className=" normal-case text-xl" href='/'>
-            <img src={LogoName} alt="brand Name" />
+            <img src={LogoName} alt="brand Name" className='w-32' />
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -42,13 +42,18 @@ const Header = () => {
         <HiMenu size='30px'/>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow dropdown-top bg-accent rounded-box w-52">
-        <li><a href='addProduct'><CiUser size='25px'/> Add Product</a></li>
+        <li><a><CiUser size='25px'/> Account</a></li>
       <li >
-        <a href='updateProduct'>
-        <BsSuitHeart size='25px'/>  Update Product
+        <a>
+        <BsSuitHeart size='25px'/>  My Item
         </a>
       </li>
-      <li><a>Delete Product</a></li>
+      <li><a><label >
+        <div className="indicator">
+          <RiShoppingBagLine size='28px'/>
+          <span className="badge badge-xs border-0 bg-[#FFC221] rounded-full  indicator-item">8</span>
+        </div>
+      </label></a></li>
       </ul>
     </div>
 

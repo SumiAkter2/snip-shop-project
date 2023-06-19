@@ -41,9 +41,6 @@ const CategoryProductInfo = ({ product }) => {
                     <div className='flex gap-x-3 items-center'>
                    <button className='border-0 btn btn-error'  onClick={() => handleToDelete(product)}>Delete </button>
                     </div>
-                   
-                   
-            
                 </div>
            </div>
         </div>
