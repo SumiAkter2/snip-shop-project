@@ -8,7 +8,7 @@ const Carousel = ({ slide,children }) => {
       className="carousel-item relative w-full h-96 mb-12"
     >
       <div className="carousel-img">
-        <img src={img} alt="" className="w-screen rounded-xl " />
+        <img src='' alt="" className="w-screen rounded-xl " />
       </div>
       <div className="absolute text-left  transform -translate-y-1/2 left-24 top-1/4">
                 <div >

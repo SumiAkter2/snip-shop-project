@@ -37,22 +37,22 @@ Vintage
   <div className="hero lg:px-32 ">
   <div className="hero-content flex-col lg:flex-row-reverse">
             <div className='flex lg:justify-center  lg:w-1/2'>
-              <img src={bannerImg1} className="max-w-sm rounded-full lg:w-80 w-44" />
-              <div>
-                <img src={bannerImg2} className="max-w-sm rounded-full " /><img src={bannerImg3} className="max-w-sm rounded-full  lg:pt-12 pl-4" />
+              <img src={bannerImg1} className="max-w-sm rounded-full lg:w-80 w-36" />
+              <div className='m-6'>
+                <img src={bannerImg2} className="lg:w-32 w-24 rounded-full " /><img src={bannerImg3} className="lg:w-32 w-24 rounded-full  lg:pt-12 pl-4" />
               </div>
    </div>
             <div className='text-left lg:w-1/2 '>
               <p className='pb-4 text-sm'>100% QUALITY, 100% SATISFACTION</p>
       <h1 className="tittle lg:text-6xl">Where the world comes to shop.</h1>
       <p className="lg:pt-20 pt-12 sub-tittle text-left">Life is hard enough already. Let us make it a little easier, Vision of Snipshop for a better outlook.</p>
-      <button className="btn bg-[#2B2B2B] btn-info uppercase rounded-full w-36 mt-12">Shop Now</button>
+      <button className="btn bg-[#2B2B2B] btn-info uppercase rounded-full w-36 lg:mt-12 mt-6">Shop Now</button>
     </div>
   </div>
 </div>
 </div>
      
-      <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-24">
+      <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 lg:bottom-32 bottom-1">
        
         <div className="flex justify-center items-center w-full py-2 gap-2">
            <a href={`#slide${prev}`} className=" mr-5">

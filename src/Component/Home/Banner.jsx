@@ -1,11 +1,11 @@
-import AddProduct from '../AddProduct/AddProduct';
 import { carouselInfo } from '../Share/Info';
+import BannerInfo from './BannerInfo';
 
 const Banner = () => {
     return (
       <div className="carousel w-full text-white">
         {carouselInfo.map((slide) => (
-          <AddProduct key={slide.id} slide={slide}></AddProduct>
+          <BannerInfo key={slide.id} slide={slide}></BannerInfo>
         ))}
       </div>
     );
