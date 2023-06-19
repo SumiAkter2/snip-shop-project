@@ -8,6 +8,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <section>
+      {/* first footer section */}
       <footer className="footer lg:grid-rows-1 grid-rows-2 p-10 text-base-100 bg-info lg:h-96">
         <div>
           <span className=" footer-header">Shop</span>

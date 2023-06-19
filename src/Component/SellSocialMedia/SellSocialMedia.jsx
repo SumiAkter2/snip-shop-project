@@ -21,7 +21,9 @@ const SellSocialMedia = () => {
                 height: "500px",
               }}
             >
+
               <div className="  bg-opacity-60 "></div>
+              {/* content */}
               <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md relative">
                   <img src={boy} alt="boy Img" className="w-64 lg:w-96" />

@@ -3,7 +3,10 @@ import emoji from "../../assets/images/ReviewPage/37 11.png";
 const Carousel = ({ slide, children }) => {
   const { img, id, prev, next } = slide;
   return (
-    <div id={`slide${id}`} className="carousel-item relative w-full lg:h-96 mb-12">
+    <div
+      id={`slide${id}`}
+      className="carousel-item relative w-full lg:h-96 mb-12"
+    >
       <div className="carousel-img">
         <img src="" alt="" className=" rounded-xl " />
       </div>
@@ -21,9 +24,9 @@ const Carousel = ({ slide, children }) => {
       <div className="absolute text-left transform -translate-y-1/2 left-24 top-1/2 w-1/2">
         <p className="lg:text-sm text-xs mt-6 italic ">
           “In 2 years, my business went from just me and my
-          <br />Shop site to 40
-          employees, my own fulfillment center <br />and over 22 million dollars in
-          revenue.”
+          <br />
+          Shop site to 40 employees, my own fulfillment center <br />
+          and over 22 million dollars in revenue.”
         </p>
       </div>
 

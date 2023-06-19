@@ -13,6 +13,7 @@ const Header = () => {
           <img src={LogoName} alt="brand Name" className="w-32" />
         </a>
       </div>
+      {/* center section */}
       <div className="navbar-center hidden lg:flex">
         <div className="join relative">
           <input
@@ -24,6 +25,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+      {/* end section */}
       <div className="navbar-end">
         <ul className="menu lg:menu-horizontal hidden ">
           <li>

@@ -30,7 +30,6 @@ const FeaturedProduct = () => {
           slidesPerView={3}
           centeredSlides={true}
           style={{
-            
             " --swiper-navigation-size": "44px",
             "--swiper-navigation-left-offset": "50px",
             "--swiper-navigation-sides-offset": " 10px",

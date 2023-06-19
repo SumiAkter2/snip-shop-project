@@ -1,5 +1,3 @@
-
-import Add from "../AddProduct/add";
 import CategoryProduct from "../Category/CategoryProduct";
 import ExploreMost from "../ExploreMost/ExploreMost";
 import FeaturedProduct from "../Featured/FeaturedProduct";

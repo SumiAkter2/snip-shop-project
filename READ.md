@@ -1,5 +1,5 @@
-### Snip Shop 
-# An E-Commerce site
+# Snip Shop 
+### An E-Commerce site
 
 ## Created With:
 - Vite + React,
@@ -16,4 +16,5 @@
 - Create dynamic route for update product,
 - Create responsive for mobile and laptop,
 - keep share component in share file,
-- Use comment sign for better understanding
+- Use comment sign for better understanding,
+- Create A not found page
