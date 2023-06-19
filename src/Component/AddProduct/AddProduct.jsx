@@ -44,7 +44,7 @@ const AddProduct = () => {
                         type="text"
                         name="Price"
                         placeholder="Type Price"
-                        className="input input-bordered input-info w-full max-w-xs   my-4"
+                        className="input input-bordered input-info w-full max-w-xs"
                         {...register("Price", { required: true })}
                       />
 
@@ -53,18 +53,21 @@ const AddProduct = () => {
                           "!Price is required"}
                       </span>
                    
-                 <br />
-                   {/* <input type='file' onchange="readURL(this);" /> */}
+              
+                  
 
                     <br />
-                      <input onChange="readURL(this);"
+                    <label className="label">
+                        Choose a Image</label>
+                    <input
+                        // onChange="readURL(this);"
                        type="file"
                         name="Image"
                         placeholder="Choose Image"
-                        className="input input-bordered input-info w-full max-w-xs   my-4"
+                        className="input input-bordered input-info w-full max-w-xs "
                         {...register("Image", { required: true })}
                       />
-               
+                   <br />
                       <span className="label-text-alt text-error ">
                         {errors.Image?.type === "required" &&
                           "!Image is required"}
