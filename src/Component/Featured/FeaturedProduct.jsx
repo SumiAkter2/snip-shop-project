@@ -30,10 +30,10 @@ const FeaturedProduct = () => {
           slidesPerView={3}
           centeredSlides={true}
           style={{
-            " --swiper-navigation-size": "44px",
-            "--swiper-navigation-left-offset": "50px",
-            "--swiper-navigation-sides-offset": " 10px",
-            "--swiper-navigation-color": "#000",
+            " swiperNavigationSize": "44px",
+            "SwiperNavigationLeftOffset": "50px",
+            "swiperNavigationSidesOffset": " 10px",
+            "swiperNavigationColor": "#000",
           }}
           modules={[Navigation]}
           className="mySwiper mx-12"
