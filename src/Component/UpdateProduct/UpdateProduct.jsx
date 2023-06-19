@@ -60,7 +60,7 @@ const UpdateProduct = () => {
 
             <br />
             <button className="btn btn-active rounded-md btn-info mt-4">
-              Add Now
+              Update
             </button>
           </form>
         </div>
