@@ -9,7 +9,7 @@ const Footer = () => {
     return (
       <section>
       
-    <footer className="footer grid-rows-1 p-10 text-base-100 bg-info">
+    <footer className="footer lg:grid-rows-1 grid-rows-2 p-10 text-base-100 bg-info lg:h-96">
             
   <div>
     <span className=" footer-header">Shop</span> 
@@ -59,7 +59,7 @@ const Footer = () => {
       
          <div className='bg-success footer-base'>
           <p>&copy; 2021-2023 SnipShop.com</p>
-          <div className='flex justify-between items-center gap-x-5'>
+          <div className='flex justify-center items-center gap-x-5'>
           <p >Terms of use</p>
           <p>Privacy</p>
           <p>Interest-based ads</p>

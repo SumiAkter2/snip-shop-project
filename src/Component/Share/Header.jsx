@@ -42,18 +42,13 @@ const Header = () => {
         <HiMenu size='30px'/>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow dropdown-top bg-accent rounded-box w-52">
-        <li><a><CiUser size='25px'/> Account</a></li>
+        <li><a href='addProduct'><CiUser size='25px'/> Add Product</a></li>
       <li >
-        <a>
-        <BsSuitHeart size='25px'/>  My Item
+        <a href='updateProduct'>
+        <BsSuitHeart size='25px'/>  Update Product
         </a>
       </li>
-      <li><a><label >
-        <div className="indicator">
-          <RiShoppingBagLine size='28px'/>
-          <span className="badge badge-xs border-0 bg-[#FFC221] rounded-full  indicator-item">8</span>
-        </div>
-      </label></a></li>
+      <li><a>Delete Product</a></li>
       </ul>
     </div>
 

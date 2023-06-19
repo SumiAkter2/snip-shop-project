@@ -17,8 +17,8 @@ const FeaturedProduct = () => {
     },[])
     return (
         <div>
-            <h1 className="tittle pt-32">Featured Product For <br /> Pre-Order</h1>
-            <p className="sub-tittle flex items-center justify-end">Discover Our Products <HiOutlineArrowNarrowRight /></p>
+            <h1 className="tittle lg:pt-32 pb-16">Featured Product For <br /> Pre-Order</h1>
+            <p className="sub-tittle flex items-center lg:justify-end justify-center">Discover Our Products <HiOutlineArrowNarrowRight /></p>
             
             <div className="grid lg:grid-cols-4 mx-auto my-auto">
                 <div className="flex cursor-pointer gap-x-6 my-auto mx-auto">
