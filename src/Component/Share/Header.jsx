@@ -1,37 +1,62 @@
 
-import logo from '../../assets/images/brandLogo.jpg';
+import {CiUser} from 'react-icons/ci';
+import {BsSuitHeart} from 'react-icons/bs';
+import {RiShoppingBagLine} from 'react-icons/ri';
+import {BiSearch} from 'react-icons/bi';
+import {HiMenu} from 'react-icons/hi';
 import LogoName from '../../assets/images/navbar/Logo (1).png'
-import searchIcon from '../../assets/images/NavBar_Search_Icon 1.png'
+
 const Header = () => {
     return (
       
-        <div className="navbar bg-accent h-20">
-  <div className="flex-1">
-          <a className=" normal-case text-xl flex ">
-            {/* <img src={logo} alt="" className='w-16 ' /> */}
-            <img src={LogoName} alt="" className='ml-1 w-32' />
+       <div className="navbar bg-accent text-white lg:px-24">
+  <div className="navbar-start">
+   
+          <a className=" normal-case text-xl">
+            <img src={LogoName} alt="brand Name" />
     </a>
   </div>
-  <div className="flex-none gap-2">
-    <div className="form-control">
-     <div className="join ">
-  <input className="input input-bordered join-item rounded-full " placeholder="Search SnipShop.com"/>
-  <button className="btn join-item rounded-full rounded-r-full btn-neutral"><img src={searchIcon} alt="" /></button>
+  <div className="navbar-center hidden lg:flex">
+   <div className="join relative">
+  <input className="input bordered-0 rounded-3xl join-item " placeholder="Search SnipShop.com"/>
+  <button className="btn border-0 bg-[#4DC3F7]  rounded-l-full rounded-r-full absolute right-[-20px] "><BiSearch color='white' size='25px'/></button>
 </div>
-    </div>
-    <div className="dropdown dropdown-end">
-      <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+  </div>
+  <div className="navbar-end">
+            <ul className="menu lg:menu-horizontal hidden ">
+      <li><a><CiUser size='25px'/> Account</a></li>
+      <li >
+        <a>
+        <BsSuitHeart size='25px'/>  My Item
+        </a>
+      </li>
+      <li><a><label >
+        <div className="indicator">
+          <RiShoppingBagLine size='28px'/>
+          <span className="badge badge-xs border-0 bg-[#FFC221] rounded-full  indicator-item">8</span>
+        </div>
+      </label></a></li>
+          </ul>
+           <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost ">
+        <HiMenu size='30px'/>
+      </label>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow dropdown-top bg-accent rounded-box w-52">
+        <li><a><CiUser size='25px'/> Account</a></li>
+      <li >
+        <a>
+        <BsSuitHeart size='25px'/>  My Item
+        </a>
+      </li>
+      <li><a><label >
+        <div className="indicator">
+          <RiShoppingBagLine size='28px'/>
+          <span className="badge badge-xs border-0 bg-[#FFC221] rounded-full  indicator-item">8</span>
+        </div>
+      </label></a></li>
       </ul>
-     
     </div>
+
   </div>
 </div>
        
