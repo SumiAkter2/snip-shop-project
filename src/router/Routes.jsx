@@ -19,9 +19,9 @@ const router = createBrowserRouter([
         element: <AddProduct />,
       },
       {
-        path: "/updateProduct",
+        path: "/:id",
         element: <UpdateProduct />,
-        loader: () => fetch('https://dummyjson.com/products'),
+
       },
       {
         path: "*",

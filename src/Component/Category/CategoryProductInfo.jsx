@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import addImg from '../../assets/images/category/Vector (1).png';
 
 const CategoryProductInfo = ({ product }) => {
@@ -18,9 +19,11 @@ const CategoryProductInfo = ({ product }) => {
                  <h1 className="font-bold mt-4">{product.title} </h1>
             <div className='flex justify-between mt-6'>
                     <div className='flex gap-x-3 items-center'>
-                         <p>$ {product.price}</p><p className='text-error text-xs'> {product.discountPercentage}% OFF</p>
-                   </div>
-                    <button className='border-0' onClick={()=>handleToAdd(product)}><img src={addImg} alt="add-button" /> </button>
+                    <p>$ {product.price}</p><p className='text-error text-xs'> {product.discountPercentage}% OFF</p>
+                    </div>
+                    <button className='border-0' onClick={() => handleToAdd(product)}><img src={addImg} alt="add-button" /> </button>
+                    <Link to={`/${product.id}`}>
+                    <button className='border-0 btn' >Update </button></Link>
             
             </div>
            </div>
