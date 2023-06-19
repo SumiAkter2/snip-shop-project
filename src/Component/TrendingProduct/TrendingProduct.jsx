@@ -1,6 +1,10 @@
+import { Autoplay, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
 import { trendingSellInfo } from '../Share/Info';
 import './TrendingProduct.css'
-import TrendingProductInfo from './TrendingProductInfo';
+
 
 // import Carousel from '../Share/Carousel';
 
@@ -17,13 +21,39 @@ const TrendingProduct = () => {
             <a className='link link-hover mt-12 font-bold' href="/">Food & Drink</a>
 
             </div>
-
-          <div className='grid lg:grid-cols-5 md:grid-cols-3 gap-x-5 mx-24 '>
-                {
-                    trendingSellInfo.map(product => <TrendingProductInfo key={product.id} product={product}></TrendingProductInfo>)
-               }
+            <div>      
+          <Swiper
+          pagination={{
+            clickable: true,
+          }}
+            navigation={true}
+                    spaceBetween={30}
+                    slidesPerView={4}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper "
+                >
+             {
+                trendingSellInfo.map(product => (
+            <SwiperSlide key={product.id}>
+            <div className=" trendingInfo-bg  relative my-12 ">
+             <img src={product.img} alt="product-img"  className="lg:h-48 absolute top-[-40px] right-[-5px]"/>
+            <div className="text-left p-4 ">
+             <h1 className="text-xl font-bold">{product.name}</h1>
+                    <p>Starting</p>
+                    <p className="text-error mt-4">${product.price}</p>
+           </div>
+            </div>
+            </SwiperSlide>  
+                        ))
+                    } </Swiper>
+            </div>
            </div> 
-        </div>
+        
     );
 };
 
