@@ -3,6 +3,7 @@ import Main from "../Component/LayOut/Main";
 import Home from "../Component/Home/Home";
 import NotFound from "../Component/Home/NotFound";
 import AddProduct from "../Component/AddProduct/AddProduct";
+import UpdateProduct from "../Component/UpdateProduct/UpdateProduct";
 
 const router = createBrowserRouter([
   {
@@ -17,20 +18,11 @@ const router = createBrowserRouter([
         path: "/addProduct",
         element: <AddProduct />,
       },
-      
-    //   {
-    //     path: "/checkout/:id",
-    //     element: (
-    //       <PrivateRoute>
-    //         <CheckOut />
-    //       </PrivateRoute>
-    //     ),
-    //     loader: ({ params }) =>
-    //       fetch(
-    //         `https://one-step-auto-zone-server.vercel.app/services/${params.id}`
-    //       ),
-    //   },
-      
+      {
+        path: "/updateProduct",
+        element: <UpdateProduct />,
+        loader: () => fetch('https://dummyjson.com/products'),
+      },
       {
         path: "*",
         element: <NotFound />,

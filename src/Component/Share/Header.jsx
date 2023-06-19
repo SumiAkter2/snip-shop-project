@@ -12,7 +12,7 @@ const Header = () => {
        <div className="navbar bg-accent text-white lg:px-24">
   <div className="navbar-start">
    
-          <a className=" normal-case text-xl">
+          <a className=" normal-case text-xl" href='/'>
             <img src={LogoName} alt="brand Name" />
     </a>
   </div>

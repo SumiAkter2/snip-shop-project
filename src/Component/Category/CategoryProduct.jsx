@@ -19,7 +19,7 @@ const CategoryProduct = () => {
       </div>
             <div className="grid lg:grid-cols-3 m-12">
                 {
-                    products.slice(7,16).map(product=><CategoryProductInfo key={product.id} product={product}></CategoryProductInfo>)
+                    products.map(product=><CategoryProductInfo key={product.id} product={product}></CategoryProductInfo>)
                 }
             </div>
         </div>
