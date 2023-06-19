@@ -12,6 +12,18 @@ const CategoryProductInfo = ({ product }) => {
             .then(console.log);
         alert('Added A Product')
     }
+    const handleToDelete = (product) => {
+        const confirm = window.confirm('Are You Sure To Delete?')
+        if (confirm) {
+            fetch(`https://dummyjson.com/products/${product.id}`, {
+  method: 'DELETE',
+})
+.then(res => res.json())
+            .then(console.log);
+        alert('Deleted')
+        }
+        
+    }
     return (
         <div className='w-52 mx-auto mt-20 rounded-md '>
             <img src={product.images[2]} alt="product-img" className="w-72 h-36 rounded-md" />
@@ -21,11 +33,18 @@ const CategoryProductInfo = ({ product }) => {
                     <div className='flex gap-x-3 items-center'>
                     <p>$ {product.price}</p><p className='text-error text-xs'> {product.discountPercentage}% OFF</p>
                     </div>
-                    <button className='border-0' onClick={() => handleToAdd(product)}><img src={addImg} alt="add-button" /> </button>
-                    <Link to={`/${product.id}`}>
-                    <button className='border-0 btn' >Update </button></Link>
+                    <button className='border-0 btn' onClick={() => handleToAdd(product)}><img src={addImg} alt="add-button" />ADD </button>
+                </div>
+                <div className='flex justify-between mt-6'>
+                     <Link to={`/${product.id}`}>
+                    <button className='border-0 btn btn-info' >Update </button></Link>
+                    <div className='flex gap-x-3 items-center'>
+                   <button className='border-0 btn btn-error'  onClick={() => handleToDelete(product)}>Delete </button>
+                    </div>
+                   
+                   
             
-            </div>
+                </div>
            </div>
         </div>
     );

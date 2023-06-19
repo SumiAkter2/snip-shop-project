@@ -49,24 +49,22 @@ const UpdateProduct = () => {
                         className="input input-bordered input-info w-full max-w-xs my-4"
                         {...register("Name", { required: true })}
                       />
-
-                      <span className="label-text-alt text-error ">
+<br />
+                      <span className="label-text-alt text-error w-1/2">
                         {errors.Name?.type === "required" &&
-                          "!Name is required"}
+                          "If you wants to update please type updated name"}
                       </span>
-                   <br />
+              <br />
+              <br />
                       <input
                         type="text"
                         name="Price"
                         defaultValue={product.price}
                         className="input input-bordered input-info w-full max-w-xs"
-                        {...register("Price", { required: true })}
+                        
                       />
 
-                      <span className="label-text-alt text-error ">
-                        {errors.Price?.type === "required" &&
-                          "!Price is required"}
-                      </span>
+                     
                    
                    <br />
                  <button className="btn btn-active rounded-md btn-info mt-4">Add Now</button>
