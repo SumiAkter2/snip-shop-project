@@ -5,20 +5,19 @@ import {  carouselInfo } from '../Share/Info';
 
 const Review = () => {
     return (
-        <div className="hero min-h-screen bg-base-200">
-  <div className="hero-content flex-col lg:flex-row">
-                <div className='lg:w-1/2'>
-                    <img src={bg}className="lg:max-w-lg max-w-sm rounded-lg " />
-                </div>
-   
-      <div className="carousel lg:w-1/2 ">
-        {carouselInfo.map((slide) => (
-            <Carousel key={slide.id} slide={slide} ></Carousel>
-        ))}
-    
-    </div>
-  </div>
-</div>
+      <div className=" ">
+        <div className="lg:flex justify-between items-center">
+          
+            <img src={bg} className=" rounded-lg lg:w-1/2 w-60" />
+          
+
+          <div className="carousel lg:w-1/2 ">
+            {carouselInfo.map((slide) => (
+              <Carousel key={slide.id} slide={slide}></Carousel>
+            ))}
+          </div>
+        </div>
+      </div>
     );
 };
 

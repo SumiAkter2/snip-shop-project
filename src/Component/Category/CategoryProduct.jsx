@@ -10,7 +10,7 @@ const CategoryProduct = () => {
         <div className="mx-16">
             <h1 className="tittle text-left">Shop by Category</h1>
            
-            <div className=" flex justify-between transform -translate-y-1/2 ">
+            <div className=" flex justify-between transform -translate-y-1/2 mt-24">
                  <p className="sub-tittle text-left">Life is hard enough already. Let us make it a little easier.</p>
                 <div className="flex cursor-pointer gap-x-6">
                     <MdKeyboardArrowLeft size='25px' />
@@ -19,7 +19,7 @@ const CategoryProduct = () => {
       </div>
             <div className="grid lg:grid-cols-3 m-12">
                 {
-                    products.map(product=><CategoryProductInfo key={product.id} product={product}></CategoryProductInfo>)
+                    products.slice(7,16).map(product=><CategoryProductInfo key={product.id} product={product}></CategoryProductInfo>)
                 }
             </div>
         </div>
