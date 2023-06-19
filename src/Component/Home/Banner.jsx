@@ -37,10 +37,10 @@ Vintage
               </div>
    </div>
             <div className='text-left lg:w-1/2 '>
-              <p className='pb-2'>100% QUALITY, 100% SATISFACTION</p>
+              <p className='pb-4'>100% QUALITY, 100% SATISFACTION</p>
       <h1 className="tittle text-6xl">Where the world comes to shop.</h1>
-      <p className="py-16 sub-tittle text-left">Life is hard enough already. Let us make it a little easier, Vision of Snipshop for a better outlook.</p>
-      <button className="btn bg-[#2B2B2B] btn-info uppercase rounded-full w-36">Shop Now</button>
+      <p className="pt-20 sub-tittle text-left">Life is hard enough already. Let us make it a little easier, Vision of Snipshop for a better outlook.</p>
+      <button className="btn bg-[#2B2B2B] btn-info uppercase rounded-full w-36 mt-12">Shop Now</button>
     </div>
   </div>
 </div>
